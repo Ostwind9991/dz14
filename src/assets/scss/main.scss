@@ -1,1 +1,181 @@
 @import "reset";
+
+.sky {
+  background-color: deepskyblue;
+  width: 100vw;
+  height: 100vh;
+
+  &__cloud-first, &__cloud-second, &__cloud-third, &__cloud-first2, &__cloud-second2, &__cloud-third2 {
+    background: url("../upload/cVvANE-clouds-free-transparent-p.png") no-repeat center/contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    animation-name: cloudAnimation;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+  }
+
+  &__cloud-first {
+    width: 300px;
+    height: 150px;
+    left: -55%;
+    top: 10%;
+  }
+
+  &__cloud-second {
+    width: 250px;
+    height: 100px;
+    top: 37%;
+  }
+
+  &__cloud-third {
+    width: 250px;
+    height: 100px;
+    top: 77%;
+    left: -100%;
+  }
+  &__cloud-first2 {
+    width: 300px;
+    height: 150px;
+    left: -100%;
+    top: 10%;
+  }
+
+  &__cloud-second2 {
+    width: 250px;
+    height: 100px;
+    top: 37%;
+    left: -55%;
+  }
+
+  &__cloud-third2 {
+    width: 250px;
+    height: 100px;
+    top: 77%;
+    left: -160%;
+  }
+
+  &__iconWrapperDom, &__iconWrapperEducation, &__iconWrapperMoney {
+    overflow: visible;
+    animation: 3s linear infinite alternate iconAnimation;
+    border-radius: 100%;
+  }
+
+
+  &__iconWrapperMoney {
+    width: 150px;
+    height: 150px;
+    background: url("../upload/money.svg") no-repeat center/60% #fff;
+    margin: 15% 0 0 60%;
+
+    &__wingsLeft, &__wingsRight {
+      width: 100px;
+      height: 83px;
+      top: 10px;
+      position: absolute;
+    }
+
+    &__wingsRight {
+      background: url(../upload/pngwing.com.png) no-repeat 113%/180%;
+      right: -85px;
+      transform-origin: bottom left;
+      animation: 1s linear infinite alternate wingsAnimationRight;
+      transform: rotate(25deg);
+    }
+
+    &__wingsLeft {
+      background: url(../upload/pngwing.com.png) no-repeat -9%/180%;
+      left: -85px;
+      transform-origin: bottom right;
+      animation: 1s linear infinite alternate wingsAnimationLeft;
+      transform: rotate(-25deg);
+    }
+  }
+
+  &__iconWrapperEducation {
+    width: 150px;
+    height: 150px;
+    background: url("../upload/education.svg") no-repeat center/60% #fff;
+    margin: 5% 0 0 30%;
+
+    &__wingsLeft, &__wingsRight {
+      width: 100px;
+      height: 83px;
+      top: 10px;
+      position: absolute;
+    }
+
+    &__wingsRight {
+      background: url(../upload/pngwing.com.png) no-repeat 113%/180%;
+      right: -85px;
+      transform-origin: bottom left;
+      animation: 1s linear infinite alternate wingsAnimationRight;
+      transform: rotate(25deg);
+    }
+
+    &__wingsLeft {
+      background: url(../upload/pngwing.com.png) no-repeat -9%/180%;
+      left: -85px;
+      transform-origin: bottom right;
+      animation: 1s linear infinite alternate wingsAnimationLeft;
+      transform: rotate(-25deg);
+    }
+  }
+
+  &__iconWrapperDom {
+    width: 200px;
+    height: 200px;
+    background: url("../upload/real_estate.svg") no-repeat center/80% #fff;
+    margin: auto;
+
+    &__wingsLeft, &__wingsRight {
+      width: 100px;
+      height: 83px;
+      top: 40px;
+      position: absolute;
+    }
+
+    &__wingsRight {
+      background: url(../upload/pngwing.com.png) no-repeat 113%/180%;
+      right: -85px;
+      transform-origin: bottom left;
+      animation: 1s linear infinite alternate wingsAnimationRight;
+      transform: rotate(25deg);
+    }
+
+    &__wingsLeft {
+      background: url(../upload/pngwing.com.png) no-repeat -9%/180%;
+      left: -85px;
+      transform-origin: bottom right;
+      animation: 1s linear infinite alternate wingsAnimationLeft;
+      transform: rotate(-25deg);
+    }
+  }
+
+}
+
+@keyframes wingsAnimationLeft {
+  100% {
+    transform: rotate(25deg);
+  }
+}
+
+@keyframes wingsAnimationRight {
+  100% {
+    transform: rotate(-25deg);
+  }
+}
+
+@keyframes iconAnimation {
+  100% {
+    transform: translateY(40%);
+  }
+}
+
+@keyframes cloudAnimation {
+  100% {
+    left: 120%;
+  }
+}
