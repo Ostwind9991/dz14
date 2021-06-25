@@ -1,5 +1,5 @@
 {
-  "name": "front-end-basic-diploma",
+  "name": "dz14",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ostwind9991/Front-End-Basic-diploma.git"
+    "url": "git+https://github.com/Ostwind9991/dz14.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ostwind9991/Front-End-Basic-diploma/issues"
+    "url": "https://github.com/Ostwind9991/dz14/issues"
   },
-  "homepage": "https://github.com/Ostwind9991/Front-End-Basic-diploma#readme",
+  "homepage": "https://github.com/Ostwind9991/dz14#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-file-include": "^2.3.0",
